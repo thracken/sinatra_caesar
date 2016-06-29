@@ -2,7 +2,13 @@
 <head>
 </head>
 <body>
-  <h1>Welcome!</h1>
-  <p>This is just some placeholder text. No point in reading it, really.</p>
+  <h1>Create a Caesar Cipher</h1>
+  <p>Enter the text you want to encode, and will give you the coded version back!</p>
+  <p><%= message %></p>
+  <form>
+    <label for="phrase">Phrase: </label><input type="text" name="phrase" /><br />
+    <label for="shift">Shift #:</label><input type="number" name="shift" min="1" max="26"/><br />
+    <input type="submit" value="Go!" />
+  </form>
 </body>
 </html>
